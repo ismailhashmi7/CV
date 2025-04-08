@@ -1,1 +1,154 @@
-hello
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My CV</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Merienda&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    body {
+      background-color: #ffe4c4;
+      font-family: 'Merienda', cursive;
+    }
+
+    h1, h2 {
+      font-family: 'Anton', sans-serif;
+    }
+
+    section {
+      margin: 20px auto;
+      padding: 20px;
+      background-color: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+      max-width: 900px;
+    }
+
+    .profile-img {
+      max-width: 130px;
+      height: auto;
+      border-radius: 50%;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin-bottom: 10px;
+    }
+
+    a.btn {
+      min-width: 120px;
+    }
+
+    /* Extra tweaks for small screens */
+    @media (max-width: 576px) {
+      h1, h2 {
+        font-size: 1.5rem;
+      }
+
+      .profile-img {
+        max-width: 100px;
+      }
+
+      section {
+        padding: 15px;
+        margin: 10px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">My CV</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item"><a class="nav-link" href="myhobbies.html">Hobbies</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- CV Title -->
+  <section class="text-center">
+    <h1>My Curriculum Vitae</h1>
+  </section>
+
+  <!-- Personal Information -->
+  <section>
+    <div class="row align-items-center">
+      <div class="col-12 col-md-3 text-center mb-3 mb-md-0">
+        <img src="1744013338708.jpg" alt="Profile" class="img-fluid profile-img">
+      </div>
+      <div class="col-12 col-md-9">
+        <h2>▪️ Personal Information</h2>
+        <p><strong>Name:</strong> Syed Ismail Hashmi</p>
+        <p><strong>Course:</strong> B.Tech in CSE (2nd Year)</p>
+        <p>Hello, welcome to my website!</p>
+        <p>I am a student based in Hyderabad.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section>
+    <h2>▪️ Education</h2>
+    <ul>
+      <li>~ SSC from Eminent High School (2021) - 9.8 GPA</li>
+      <li>~ Intermediate (MPC) from Dynamic Success Junior College (2021–2023) - 75%</li>
+      <li>~ Currently pursuing B.Tech CSE (2nd Year) - AVN Institute of Engineering & Technology</li>
+    </ul>
+  </section>
+
+  <!-- Professional Skills -->
+  <section>
+    <h2>▪️ Professional Skills</h2>
+    <ul>
+      <li><strong>C Programming:</strong> 🌟🌟🌟🌟🌟</li>
+      <li><strong>Python:</strong> 🌟🌟🌟⭐⭐</li>
+      <li><strong>Web Designing</strong></li>
+      <li><strong>Graphic Designing</strong></li>
+      <li><strong>Data Analysis:</strong> 🌟🌟🌟⭐⭐</li>
+    </ul>
+  </section>
+
+  <!-- General Skills -->
+  <section>
+    <h2>▪️ Skills</h2>
+    <ul>
+      <li>~ Team Work</li>
+      <li>~ Hard Work</li>
+      <li>~ Data Analysis</li>
+      <li>~ Copy Writing</li>
+    </ul>
+  </section>
+
+  <!-- Links -->
+  <section class="text-center">
+    <a href="table3.html" class="btn btn-primary m-2">Favourite Cars</a>
+    <!-- <a href="contact.html" class="btn btn-outline-dark m-2">Contact Me</a> -->
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
