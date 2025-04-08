@@ -1,39 +1,128 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <style>
-      
-    </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CONTACT</title>
-    <link rel="stylesheet" href="style2.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lavishly+Yours&family=Merienda:wght@300..900&family=Rancho&display=swap" rel="stylesheet">
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Imperial+Script&display=swap" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <style>
+        body {
+            font-family: 'Merienda', sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        #con, #con2 {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        #con {
+            text-align: center;
+        }
+
+        #con table {
+            width: 100%;
+            border-spacing: 10px;
+        }
+
+        #con td {
+            font-size: 1.2rem;
+            line-height: 1.8;
+        }
+
+        h2 {
+            font-family: 'Anton', ;
+            color: #007BFF;
+        }
+
+        .email-link {
+            font-size: 1.2rem;
+            color: #007BFF;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .email-link:hover {
+            color: #0056b3;
+        }
+
+        #con2 label {
+            font-size: 1.1rem;
+            margin-bottom: 10px;
+        }
+
+        #con2 input, #con2 textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border: 1px solid #ccc;
+            font-size: 1rem;
+        }
+
+        #con2 input[type="submit"] {
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            cursor: pointer;
+            font-size: 1.2rem;
+        }
+
+        #con2 input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
 </head>
-<body >
- <div id="con">
-    <table cellspacing="30px">
-        <TR >
-            <TD>  MY CONTACT DETAIL</TD></TR>
-            <tr><TD> CONTACT NO :+918121131870</TD></tr>
-           <tr><TD> EMAIL :ismailhashmi0010@gmail.com</TD></tr> 
-           <tr><TD>INSTAGRAM :@x.habibi.777</TD></tr>  
-        
-     </table> 
+
+<body>
+
+    <!-- Contact Information Section -->
+    <div id="con">
+        <h2>MY CONTACT DETAILS</h2>
+        <table>
+            <tr>
+                <td><b>CONTACT NO:</b> +918121131870</td>
+            </tr>
+            <tr>
+                <td><b>EMAIL:</b> <a href="mailto:ismailhashmi0010@gmail.com" class="email-link">ismailhashmi0010@gmail.com</a></td>
+            </tr>
+            <tr>
+                <td><b>INSTAGRAM:</b> @x.habibi.777</td>
+            </tr>
+        </table>
     </div>
-  <div id="con2">
-    <label for="" cellspacing="30px">YOUR NAME:</label >
-        <input type="text" name="YOUR NAME:"><br>
-        <label for=""cellspacing="30px">YOUR EMAIL</label>
-       <input type="email" name="YOUR EMAIL" > <br>
-       <label for=""cellspacing="30px">MESSAGE</label>
-       <textarea name="MESSAGE" id="" cellspacing="30px"></textarea><br>
-       <input type="submit" name="SUBMIT" cellspacing="30px">
-  </div>
- 
-  
+
+    <!-- Contact Form Section -->
+    <div id="con2">
+        <h2>GET IN TOUCH</h2>
+        <form action="mail to:ismailhashmi0010@gmail.com" method="post">
+            <label for="name">YOUR NAME:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required><br>
+
+            <label for="email">YOUR EMAIL:</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+
+            <label for="message">FEEDBACK:</label>
+            <textarea name="message" id="message" rows="4" placeholder="Your message" required></textarea><br>
+
+            <input type="submit" value="SUBMIT">
+        </form>
+    </div>
+
 </body>
+
 </html>
