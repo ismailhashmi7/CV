@@ -17,9 +17,13 @@
 </a>
 
 <style>
+
 body {
   min-width: 1280px;
   overflow-x: auto;
+  font-family: 'Poppins', sans-serif;
+  background: #f5f9fc;
+  margin: 0;
 }
 
 
@@ -48,17 +52,10 @@ body {
     font-size: 1.5rem;
   }
 
-</style>
-
-  <style>
     html {
       scroll-behavior: smooth;
     }
-    body {
-      font-family: 'Poppins', sans-serif;
-      background: #f5f9fc;
-      margin: 0;
-    }
+   
     .site-header {
       background: white;
       box-shadow: 0 2px 6px rgba(0,0,0,0.1);
@@ -66,6 +63,21 @@ body {
       top: 0;
       z-index: 999;
     }
+  .section h2,
+.section p {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.section {
+  padding: 40px 20px; /* reduce from 60px if needed */
+  margin: 0; /* Add this to ensure no extra margin */
+}
+
+.hero {
+  margin-bottom: 0 !important;
+  padding-bottom: 0 !important;
+}
+
     .site-header .container {
       display: flex;
       justify-content: space-between;
